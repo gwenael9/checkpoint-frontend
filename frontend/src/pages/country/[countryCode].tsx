@@ -17,7 +17,7 @@ export default function CountryName() {
   const country = data?.country;
 
   return (
-    <Layout title="test">
+    <Layout title={country?.name ? country.name : "erreur"}>
       <div className="flex justify-center mt-2">
         <div className="flex items-center flex-col">
           {country?.emoji}
